@@ -1,0 +1,12 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: example
+  labels:
+    nerc.mghpcc.org/external-ingress: "true"
+spec:
+  port:
+    targetPort: http
+  to:
+    kind: Service
+    name: example
