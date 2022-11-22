@@ -10,3 +10,6 @@ spec:
   to:
     kind: Service
     name: example
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
